@@ -1,0 +1,23 @@
+* {
+    
+    background-color: blanchedalmond;
+}
+main {
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+input {
+    margin: 20px;
+    background-color: white;
+}
+button {
+    background-color: gray;
+    border-radius: 25px;
+}
+#weather {
+    font-size: 18px;
+    font-weight: light;
+}
