@@ -19,11 +19,12 @@ function goWeather(){ //funktion som hämtar kordinater och sedan kör vädret e
                   
             })
             .then(dataWeather => {   
-                console.log(dataWeather.main.temp);
+                console.log(dataWeather);
                 console.log(dataWeather.weather[0].description);
+                document.getElementById("icon").src = "https://openweathermap.org/img/wn/" + dataWeather.weather[0].icon + "@2x.png";
                 const removedDecimal = Math.round(dataWeather.main.temp); //Rundar av decimaler från temperaturen
                 document.getElementById("weather").innerHTML=`${removedDecimal}C with ${dataWeather.weather[0].description}` //Lägger in temperatur och väder info
-                
+
             })
            
          });
